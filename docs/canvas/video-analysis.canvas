@@ -1,0 +1,72 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 400,
+      "height": 60,
+      "text": "YouTube视频解析",
+      "color": "#FF6B6B"
+    },
+    {
+      "id": "core-points",
+      "type": "text",
+      "x": -350,
+      "y": 120,
+      "width": 300,
+      "height": 100,
+      "text": "📊 核心要点\n\n要点1: [核心概念]\n要点2: [方法论]\n要点3: [最佳实践]",
+      "color": "#4ECDC4"
+    },
+    {
+      "id": "quotes",
+      "type": "text",
+      "x": -350,
+      "y": 280,
+      "width": 300,
+      "height": 80,
+      "text": "💡 金句引用\n\n\"引用1\"\n\"引用2\"",
+      "color": "#45B7D1"
+    },
+    {
+      "id": "actions",
+      "type": "text",
+      "x": 50,
+      "y": 120,
+      "width": 300,
+      "height": 100,
+      "text": "🔧 实践行动\n\n立即可做: 3项\n本周目标: 3项\n长期规划: 2项",
+      "color": "#96CEB4"
+    },
+    {
+      "id": "notes",
+      "type": "text",
+      "x": 50,
+      "y": 280,
+      "width": 300,
+      "height": 80,
+      "text": "🎓 学习笔记\n\n新概念: 3个\n关联知识: 2个\n待探索: 2个",
+      "color": "#FFEAA7"
+    },
+    {
+      "id": "resources",
+      "type": "text",
+      "x": -150,
+      "y": 420,
+      "width": 500,
+      "height": 60,
+      "text": "📎 相关资源\n\n视频: https://youtube.com/watch?v=5FokzkHTpc0 | 相关笔记: 2篇 | 扩展阅读: 2篇",
+      "color": "#DDA0DD"
+    }
+  ],
+  "edges": [
+    {"id": "e1", "fromNode": "root", "toNode": "core-points"},
+    {"id": "e2", "fromNode": "root", "toNode": "actions"},
+    {"id": "e3", "fromNode": "root", "toNode": "notes"},
+    {"id": "e4", "fromNode": "core-points", "toNode": "quotes"},
+    {"id": "e5", "fromNode": "actions", "toNode": "resources"},
+    {"id": "e6", "fromNode": "notes", "toNode": "resources"}
+  ]
+}
